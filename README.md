@@ -1,21 +1,3 @@
-# Password Generator Starter Code
-
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria - DONE
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password - DONE
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters - DONE
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters - DONE
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected - DONE
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria - DONE
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page - DONE
-
 # Password Generator
 
 The purpose of this project is to create a password generator that takes in user perameters and spits out a randomized password.
@@ -35,7 +17,7 @@ There are no special dependencies to view this project.
 
 ### Installing
 
-Just unzip and click on index.html or open it in your browser using this link: https://scicluna.github.io/Scicluna-Professional-Portfolio/
+Just unzip and click on index.html or open it in your browser using this link: https://scicluna.github.io/password-generator/
 
 ### Executing program
 
@@ -49,5 +31,5 @@ For further help in using this website, or in learning about html/css, please em
 
 John Sciclcuna
 sciclunajl@gmail.com  
-https://github.com/scicluna/Scicluna-Professional-Portfolio  
-https://scicluna.github.io/Scicluna-Professional-Portfolio/
+https://github.com/scicluna/password-generator
+https://scicluna.github.io/password-generator/
