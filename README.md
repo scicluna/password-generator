@@ -29,7 +29,7 @@ For further help in using this website, or in learning about html/css, please em
 
 ## Authors
 
-John Sciclcuna
+John Sciclcuna  
 sciclunajl@gmail.com  
-https://github.com/scicluna/password-generator
+https://github.com/scicluna/password-generator  
 https://scicluna.github.io/password-generator/
