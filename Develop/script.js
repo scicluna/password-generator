@@ -19,7 +19,7 @@ function generatePassword(){
   //making sure that length is a whole number to avoid unexpected results. length - Math.floor(length) will equal 0 if its a whole number, but a decimal if its a float, or undefined if not a number
   if (length < 8 || length > 128 || length - (Math.floor(length)) !== 0 ){  
     window.alert("Please only use a whole number between 8 and 128")
-    generatePassword();
+    return
   }
 
   //prompts that return booleons. used to later create our passwordpool
@@ -29,19 +29,20 @@ function generatePassword(){
   let special = window.confirm("Would you like to include special characters?") 
 
   //reminding the user of the options selected
-  window.alert(`Length: ${length}
+  window.alert(`
+  Length: ${length}
   Uppercase Letters: ${uppercase} 
   Lowercase Letters: ${lowercase} 
   Numbers: ${numeric}
   Special Characters: ${special}`)
 
-  //asking the user to try again if they choose no perameters for their password
+  //asking the user to try again if they choose no parameters for their password.
   if (!uppercase && !lowercase && !numeric && !special){
     window.alert("Please set atleast one perameter")
-    generatePassword();
+    return
   }
 
-  //check to see if they responded true for the password perameters, and then concatting their corresponding arrays into the passwordpool
+  //check to see if they responded true for the password parameters, and then concatting their corresponding arrays into the passwordpool
   if (uppercase){
     passwordpool = passwordpool.concat(uppercaseLetters)
   }
@@ -58,13 +59,13 @@ function generatePassword(){
     passwordpool = passwordpool.concat(specialCharacters)
   }
 
-  //generating our passcode with a for loop. the for-loop is based on the specified length and picks random indexes from our newly constructed passwordpool to generate a unique passcode
-  let passcode = ''
+  //generating our passphrase with a for loop. the for-loop is based on the specified length and picks random indexes from our newly constructed passwordpool to generate a unique password
+  let passphrase = ''
   for (let i = 0;i<length;i++){
     let randomNumber = Math.floor((Math.random()*passwordpool.length))
-    passcode = passcode.concat(passwordpool[randomNumber])
+    passphrase = passphrase.concat(passwordpool[randomNumber])
   }
-  return passcode
+  return passphrase
 }
 
 // Get references to the #generate element
